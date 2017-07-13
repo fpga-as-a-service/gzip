@@ -1,0 +1,567 @@
+{
+    "templateVersion": "1.0.0", 
+    "ideVersion": "0.0.0", 
+    "hdkVersion": "0.0.0", 
+    "sdkVersion": "0.0.0", 
+    "designName": "gzip_highcompr_quickapp", 
+    "udid": "989e259a-ff16-42b8-bbf7-0ceb0c6ade8a", 
+    "nbStreams": 2, 
+    "nbIPs": 8, 
+    "streams": [
+        {
+            "streamName": "gzip_highcompr_quickapp_QPHS_file_in", 
+            "streamType": "PCIe", 
+            "streamDirection": "in"
+        }, 
+        {
+            "streamName": "gzip_highcompr_quickapp_QPHS_archive_out", 
+            "streamType": "PCIe", 
+            "streamDirection": "out"
+        }
+    ], 
+    "IPs": [
+        {
+            "ipVendor": "plda.com", 
+            "ipLibrary": "quickplay.kernel", 
+            "ipName": "GzipHC_32_8", 
+            "ipVersion": "1.0", 
+            "ipType": "built-in", 
+            "ipInstances": [
+                {
+                    "baseAddress": 66560, 
+                    "instanceName": "GzipHC_32_8_1"
+                }
+            ], 
+            "registersList": []
+        }, 
+        {
+            "ipVendor": "plda.com", 
+            "ipLibrary": "quickplay.streamdevice", 
+            "ipName": "archive_out", 
+            "ipVersion": "v1.5.1", 
+            "ipType": "built-in", 
+            "ipInstances": [
+                {
+                    "baseAddress": 136192, 
+                    "instanceName": "archive_out"
+                }
+            ], 
+            "registersList": [
+                {
+                    "regAddr": 0, 
+                    "regWidth": 32, 
+                    "regName": "writtenPackets", 
+                    "regAccess": "read-only", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 4, 
+                    "regWidth": 32, 
+                    "regName": "writtenBytes", 
+                    "regAccess": "read-only", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 8, 
+                    "regWidth": 32, 
+                    "regName": "writeTransactions", 
+                    "regAccess": "read-only", 
+                    "regOffset": 0
+                }
+            ]
+        }, 
+        {
+            "ipVendor": "plda.com", 
+            "ipLibrary": "quickplay.streamdevice", 
+            "ipName": "file_in", 
+            "ipVersion": "v1.5.1", 
+            "ipType": "built-in", 
+            "ipInstances": [
+                {
+                    "baseAddress": 140288, 
+                    "instanceName": "file_in"
+                }
+            ], 
+            "registersList": [
+                {
+                    "regAddr": 0, 
+                    "regWidth": 32, 
+                    "regName": "writtenPackets", 
+                    "regAccess": "read-only", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 4, 
+                    "regWidth": 32, 
+                    "regName": "writtenBytes", 
+                    "regAccess": "read-only", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 8, 
+                    "regWidth": 32, 
+                    "regName": "writeTransactions", 
+                    "regAccess": "read-only", 
+                    "regOffset": 0
+                }
+            ]
+        }, 
+        {
+            "ipVendor": "plda.com", 
+            "ipLibrary": "quickplay.streamdevice", 
+            "ipName": "s_1", 
+            "ipVersion": "v1.5.1", 
+            "ipType": "built-in", 
+            "ipInstances": [
+                {
+                    "baseAddress": 144384, 
+                    "instanceName": "s_1"
+                }
+            ], 
+            "registersList": [
+                {
+                    "regAddr": 0, 
+                    "regWidth": 32, 
+                    "regName": "writtenPackets", 
+                    "regAccess": "read-only", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 4, 
+                    "regWidth": 32, 
+                    "regName": "writtenBytes", 
+                    "regAccess": "read-only", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 8, 
+                    "regWidth": 32, 
+                    "regName": "writeTransactions", 
+                    "regAccess": "read-only", 
+                    "regOffset": 0
+                }
+            ]
+        }, 
+        {
+            "ipVendor": "plda.com", 
+            "ipLibrary": "quickplay.interface", 
+            "ipName": "PCIe", 
+            "ipVersion": "1.5.6", 
+            "ipType": "built-in", 
+            "streamHandlers": [
+                {
+                    "hName": "gzip_highcompr_quickapp_QPHS_archive_out", 
+                    "dmaChannel": 0
+                }, 
+                {
+                    "hName": "gzip_highcompr_quickapp_QPHS_file_in", 
+                    "dmaChannel": 1
+                }
+            ], 
+            "ipInstances": [], 
+            "registersList": []
+        }, 
+        {
+            "ipVendor": "algodone.com", 
+            "ipLibrary": "lgdn.components", 
+            "ipName": "LGDN_DRM_inst", 
+            "ipVersion": "2.0.0", 
+            "ipType": "external", 
+            "ipInstances": [
+                {
+                    "baseAddress": 70656, 
+                    "instanceName": "LGDN_DRM_inst"
+                }
+            ], 
+            "registersList": [
+                {
+                    "regAddr": 0, 
+                    "regWidth": 32, 
+                    "regName": "LgdnPageRegister", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 4, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine0", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 8, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine1", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 12, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine2", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 16, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine3", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 20, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine4", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 24, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine5", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 28, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine6", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 32, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine7", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 36, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine8", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 40, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine9", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 44, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine10", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 48, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine11", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 52, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine12", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 56, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine13", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 60, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine14", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 64, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine15", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 68, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine16", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 72, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine17", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 76, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine18", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 80, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine19", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 84, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine20", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 88, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine21", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 92, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine22", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 96, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine23", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 100, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine24", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 104, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine25", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 108, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine26", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 112, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine27", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 116, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine28", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 120, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine29", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 124, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine30", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 128, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine31", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 132, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine32", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 136, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine33", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 140, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine34", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 144, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine35", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 148, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine36", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 152, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine37", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 156, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine38", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 160, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine39", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 164, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine40", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 168, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine41", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 172, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine42", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 176, 
+                    "regWidth": 32, 
+                    "regName": "LgdnRegisterLine43", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }
+            ]
+        }, 
+        {
+            "ipVendor": "plda.com", 
+            "ipLibrary": "quickplay.clock.a10pl4", 
+            "ipName": "ClockManager", 
+            "ipVersion": "1.0", 
+            "ipType": "built-in", 
+            "ipInstances": [
+                {
+                    "baseAddress": 1024, 
+                    "instanceName": "ClockManager"
+                }
+            ], 
+            "registersList": [
+                {
+                    "regAddr": 0, 
+                    "regWidth": 1, 
+                    "regName": "SOFTWARE_RESET", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 0, 
+                    "regWidth": 1, 
+                    "regName": "GLOBAL_SW_RESET", 
+                    "regAccess": "read-write", 
+                    "regOffset": 0
+                }
+            ]
+        }, 
+        {
+            "ipVendor": "plda.com", 
+            "ipLibrary": "quickplay.module", 
+            "ipName": "ControlManager", 
+            "ipVersion": "1.0", 
+            "ipType": "built-in", 
+            "ipInstances": [
+                {
+                    "baseAddress": 0, 
+                    "instanceName": "ControlManager"
+                }
+            ], 
+            "registersList": [
+                {
+                    "regAddr": 0, 
+                    "regWidth": 32, 
+                    "regName": "UDID_PART0", 
+                    "regAccess": "read-only", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 4, 
+                    "regWidth": 32, 
+                    "regName": "UDID_PART1", 
+                    "regAccess": "read-only", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 8, 
+                    "regWidth": 32, 
+                    "regName": "UDID_PART2", 
+                    "regAccess": "read-only", 
+                    "regOffset": 0
+                }, 
+                {
+                    "regAddr": 12, 
+                    "regWidth": 32, 
+                    "regName": "UDID_PART3", 
+                    "regAccess": "read-only", 
+                    "regOffset": 0
+                }
+            ]
+        }
+    ]
+}
