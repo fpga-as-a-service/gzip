@@ -1,9 +1,9 @@
 # GZIP Accelerator Repository
 
 ## Overview
-This repository contains all applications that can be ran using the GZIP Accelerator provided.
-GZIP FPGA Accelerator Powered by Accelize & CAST GZip IP 
-Designed with QuickPlay, Protected by Algodone Embedded DRM 
+This repository contains all applications that can be ran using the GZIP Accelerator provided.  
+GZIP FPGA Accelerator Powered by Accelize & CAST GZip IP   
+Designed with QuickPlay, Protected by Algodone Embedded DRM   
 
 
 ## Folders organization
